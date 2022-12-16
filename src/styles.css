@@ -7,6 +7,25 @@ body {
   margin: 0 auto;
 }
 
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 66px;
+}
+
+.grid-2-columns {
+  grid-template-columns: auto auto;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 header {
   color: #fff;
   text-align: center;
@@ -56,6 +75,41 @@ header a {
   margin-top: 32px;
 }
 
+main {
+  background: #fff;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main h2 {
+  color: #6c2270;
+  opacity: 0.3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  color: #6c2270;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+main p {
+  color: #272044;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 footer {
   color: #fff;
   background-image: linear-gradient(
@@ -67,18 +121,6 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 0;
-}
-
-section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 100px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 66px;
 }
 
 footer h3 {
@@ -106,11 +148,21 @@ footer li {
 footer a {
   color: #fff;
   opacity: 0.7;
+  font-size: 16px;
 }
 
 @media (max-width: 960px) {
+  section {
+    padding: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 33px;
+  }
+
   header {
-    padding: 60px 0;
+    padding: 60px 10px;
   }
 
   header h1 {
@@ -126,7 +178,7 @@ footer a {
   }
 
   header a {
-    font-size: 10px;
+    font-size: 12px;
     padding: 12px 28px;
   }
 }
