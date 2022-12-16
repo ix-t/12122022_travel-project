@@ -43,12 +43,21 @@ section.secondary {
   background: #fff;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
 
 .card-footer {
   padding: 10px 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .btn {
@@ -119,7 +128,8 @@ main {
 }
 
 main img {
-  max-width: 100%;
+  display: block;
+  width: 100%;
 }
 
 main h2 {
@@ -235,5 +245,13 @@ footer a {
   header a {
     font-size: 12px;
     padding: 12px 28px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
