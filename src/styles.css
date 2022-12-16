@@ -13,6 +13,10 @@ section {
   padding: 100px;
 }
 
+section.secondary {
+  background: #f8f8f8;
+}
+
 .grid {
   display: grid;
   grid-gap: 66px;
@@ -23,7 +27,42 @@ section {
 }
 
 .grid-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+
+.grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 10px 0;
+}
+
+.btn {
+  display: block;
+  color: #fff;
+  background-color: #6c2270;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px;
 }
 
 header {
@@ -99,6 +138,22 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.2;
+  margin: 0;
+}
+
+main h4 {
+  color: #6c2270;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+}
+
+main h5 {
+  color: #272044;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
   margin: 0;
 }
 
